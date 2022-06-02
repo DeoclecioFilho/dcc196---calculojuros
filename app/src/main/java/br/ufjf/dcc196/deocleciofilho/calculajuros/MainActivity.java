@@ -23,4 +23,11 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("valorPresente",valorPresente);
         startActivity(intent);
     }
+    public void JurosCompostoClick(View view){
+        Double valorPresente = Double.parseDouble(editTextValorPrsente.getText().toString());
+
+        Intent intent = new Intent(MainActivity.this,JurosSimplesActivity.class);
+        intent.putExtra("valorPresente",valorPresente);
+        startActivity(intent);
+    }
 }
